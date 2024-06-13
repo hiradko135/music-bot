@@ -1,23 +1,3 @@
-/*
-
-  ________.__                        _____.___.___________
- /  _____/|  | _____    ____  ____   \__  |   |\__    ___/
-/   \  ___|  | \__  \ _/ ___\/ __ \   /   |   |  |    |   
-\    \_\  \  |__/ __ \\  \__\  ___/   \____   |  |    |   
- \______  /____(____  /\___  >___  >  / ______|  |____|   
-        \/          \/     \/    \/   \/                  
-
-╔════════════════════════════════════════════════════════════════════════╗
-║                                                                        ║
-║  ## Created by GlaceYT!                                                ║
-║  ## Feel free to utilize any portion of the code                       ║
-║  ## DISCORD :  https://discord.com/invite/xQF9f9yUEM                   ║
-║  ## YouTube : https://www.youtube.com/@GlaceYt                         ║
-║                                                                        ║
-╚════════════════════════════════════════════════════════════════════════╝
-
-
-*/
 const { ApplicationCommandOptionType, EmbedBuilder } = require('discord.js');
 
 const queueNames = [];
@@ -39,7 +19,7 @@ async function play(client, interaction) {
         const resolve = await client.riffy.resolve({ query: query, requester: interaction.user });
         console.log('Resolve response:', resolve);
 
-        // Ensure the response structure is as expected
+        // Ensure the response structure is as expectes
         if (!resolve || typeof resolve !== 'object') {
             throw new TypeError('Resolve response is not an object');
         }
@@ -85,28 +65,28 @@ async function play(client, interaction) {
                 .setColor('#4d9fd6')
                 .setAuthor({
                     name: 'Request Update!',
-                    iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1236794583732457473/7828-verify-ak.gif',
-                    url: 'https://discord.gg/xQF9f9yUEM'
+                    iconURL: '',
+                    url: 'https://discord.gg/viteam'
                 })
-                .setDescription('➡️ **Your request has been successfully processed.**\n➡️** Please use the buttons to control the queue**'),
+                .setDescription(' **Your request has been successfully processed.**\n** Please use the buttons to control the queue**'),
 
             new EmbedBuilder()
                 .setColor('#ffea00')
                 .setAuthor({
                     name: 'Request Update!',
-                    iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1236802032938127470/4104-verify-yellow.gif',
-                    url: 'https://discord.gg/xQF9f9yUEM'
+                    iconURL: '',
+                    url: 'https://discord.gg/viteam'
                 })
-                .setDescription('➡️ **Your request has been successfully processed.**\n➡️** Please use the buttons to control the queue**'),
+                .setDescription(' **Your request has been successfully processed.**\n** Please use the buttons to control the queue**'),
 
             new EmbedBuilder()
                 .setColor('#FF0000')
                 .setAuthor({
                     name: 'Request Update!',
-                    iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1236802049190920202/4104-verify-red.gif',
-                    url: 'https://discord.gg/xQF9f9yUEM'
+                    iconURL: '',
+                    url: 'https://discord.gg/viteam'
                 })
-                .setDescription('➡️ **Your request has been successfully processed.**\n➡️** Please use the buttons to control the queue**')
+                .setDescription(' **Your request has been successfully processed.**\n** Please use the buttons to control the queue**')
         ];
 
         const randomIndex = Math.floor(Math.random() * embeds.length);
@@ -136,25 +116,3 @@ module.exports = {
     run: play,
     queueNames: queueNames
 };
-
-
-/*
-
-  ________.__                        _____.___.___________
- /  _____/|  | _____    ____  ____   \__  |   |\__    ___/
-/   \  ___|  | \__  \ _/ ___\/ __ \   /   |   |  |    |   
-\    \_\  \  |__/ __ \\  \__\  ___/   \____   |  |    |   
- \______  /____(____  /\___  >___  >  / ______|  |____|   
-        \/          \/     \/    \/   \/                  
-
-╔════════════════════════════════════════════════════════════════════════╗
-║                                                                        ║
-║  ## Created by GlaceYT!                                                ║
-║  ## Feel free to utilize any portion of the code                       ║
-║  ## DISCORD :  https://discord.com/invite/xQF9f9yUEM                   ║
-║  ## YouTube : https://www.youtube.com/@GlaceYt                         ║
-║                                                                        ║
-╚════════════════════════════════════════════════════════════════════════╝
-
-
-*/
