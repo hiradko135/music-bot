@@ -1,5 +1,5 @@
 const status = "AUTOMATIC";
-const botName = "💎 VODKA_MUSIC";
+const botName = "💎 PRIME MUSIC";
 const Text = "GlaceYT";
 const version = "Latest@ v1.0"; 
 const startTime = Date.now();
