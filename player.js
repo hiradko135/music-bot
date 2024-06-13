@@ -40,10 +40,10 @@ function initializePlayer(client) {
             .setAuthor({
                 name: 'Now Playing',
                 iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1236664581364125787/music-play.gif?ex=6638d524&is=663783a4&hm=5179f7d8fcd18edc1f7d0291bea486b1f9ce69f19df8a96303b75505e18baa3a&',
-                url: 'https://discord.gg/xQF9f9yUEM'
+                url: 'https://discord.gg/viteam'
             })
-            .setDescription(`➡️ **Song Name:** [${track.info.title}](${track.info.uri})\n➡️ **Author:** ${track.info.author}\n➡️ **Platforms :** YouTube, Spotify, SoundCloud`)
-            .setImage(`https://cdn.discordapp.com/attachments/1004341381784944703/1165201249331855380/RainbowLine.gif?ex=663939fa&is=6637e87a&hm=e02431de164b901e07b55d8f8898ca5b1b2832ad11985cecc3aa229a7598d610&`)
+            .setDescription(` **Song Name:** [${track.info.title}](${track.info.uri})\n **Author:** ${track.info.author}\n`)
+            .setImage(``)
             .setThumbnail(track.info.thumbnail)
             .setTimestamp()
             .setFooter({ text: 'Click below buttons to control playback!' });
@@ -105,7 +105,7 @@ function initializePlayer(client) {
                     .setAuthor({
                         name: 'Queue Loop!',
                         iconURL: 'https://cdn.discordapp.com/attachments/1156866389819281418/1157318080670728283/7905-repeat.gif?ex=66383bb4&is=6636ea34&hm=65f37cf88245f1c09285b547fda57b82828b3bbcda855e184f446d6ff43756b3&',
-                        url: 'https://discord.gg/xQF9f9yUEM'
+                        url: 'https://discord.gg/viteam'
                     })
                     .setColor("#00FF00")
                     .setTitle("**Queue loop is Activated!**")
@@ -232,4 +232,3 @@ function initializePlayer(client) {
     }
     
     module.exports = { initializePlayer };
-    
